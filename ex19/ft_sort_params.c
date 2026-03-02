@@ -30,9 +30,9 @@ int	ft_strcmp(char *s1, char *s2)
 
 int	main(int ac, char **av)
 {
-	int	i;
-	int	j;
-	char		*temp;
+	int		i;
+	int		j;
+	char	*temp;
 
 	if (ac > 1)
 	{

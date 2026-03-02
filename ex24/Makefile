@@ -6,7 +6,7 @@ I_DIR = includes
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -I ${I_DIR}
 
-SRC_FILES = ft_putchar.c ft_putstr ft_strcmp.c ft_strlen.c ft_swap.c
+SRC_FILES = ft_putchar.c ft_putstr.c ft_strcmp.c ft_strlen.c ft_swap.c
 SRCS = $(addprefix $(S_DIR)/, $(SRC_FILES))
 
 OBJS = $(SRCS:.c=.o)
