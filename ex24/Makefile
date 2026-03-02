@@ -4,7 +4,7 @@ S_DIR = srcs
 I_DIR = includes
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -I ${I_DIR}
+CFLAGS = -Wall -Wextra -Werror -I $(I_DIR)
 
 SRC_FILES = ft_putchar.c ft_putstr.c ft_strcmp.c ft_strlen.c ft_swap.c
 SRCS = $(addprefix $(S_DIR)/, $(SRC_FILES))
@@ -24,7 +24,7 @@ clean:
 	rm -f $(OBJS)
 
 fclean: clean
-	em -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 
