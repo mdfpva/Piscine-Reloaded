@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_display_file.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mide-fre <mide-fre@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/13 14:05:00 by mide-fre          #+#    #+#             */
+/*   Updated: 2026/04/13 14:24:26 by mide-fre         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 #include <fcntl.h>
 
@@ -26,8 +38,12 @@ int	ft_display_file(char *filename)
 		ft_putstr_error("Cannot read file.");
 		return (1);
 	}
-	while ((ret = read(fd, buffer, 2048)) > 0)
+	ret = read(fd, buffer, 2048);
+	while (ret > 0)
+	{
 		write(1, buffer, ret);
+		ret = read(fd, buffer, 2048);
+	}
 	if (ret == -1)
 		ft_putstr_error("Cannot read file");
 	close(fd);

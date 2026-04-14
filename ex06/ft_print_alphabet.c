@@ -1,9 +1,16 @@
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mide-fre <mide-fre@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/13 11:54:24 by mide-fre          #+#    #+#             */
+/*   Updated: 2026/04/13 15:44:55 by mide-fre         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_print_alphabet(void)
 {
@@ -16,9 +23,3 @@ void	ft_print_alphabet(void)
 		c++;
 	}
 }
-/*
-int	main(void)
-{
-	ft_print_alphabet();
-	return (0);
-}*/

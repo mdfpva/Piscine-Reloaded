@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_foreach.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mide-fre <mide-fre@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/13 12:01:45 by mide-fre          #+#    #+#             */
+/*   Updated: 2026/04/13 18:24:37 by mide-fre         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 void	ft_foreach(int *tab, int length, void (*f)(int))
 {
 	int	i;
@@ -5,7 +17,7 @@ void	ft_foreach(int *tab, int length, void (*f)(int))
 	i = 0;
 	while (i < length)
 	{
-		f(tab[i])
+		f(tab[i]);
 		i++;
 	}
 }

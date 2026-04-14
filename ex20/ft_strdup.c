@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mide-fre <mide-fre@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/13 11:57:42 by mide-fre          #+#    #+#             */
+/*   Updated: 2026/04/13 17:09:26 by mide-fre         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
 int	ft_strlen(char *str)
@@ -23,7 +35,7 @@ void	ft_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 }
 
-char	ft_strdup(char *src)
+char	*ft_strdup(char *src)
 {
 	char	*dest;
 

@@ -1,9 +1,16 @@
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mide-fre <mide-fre@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/13 11:55:07 by mide-fre          #+#    #+#             */
+/*   Updated: 2026/04/13 15:45:35 by mide-fre         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
@@ -12,9 +19,3 @@ void	ft_is_negative(int n)
 	else
 		ft_putchar('N');
 }
-/*
-int	main(void)
-{
-	ft_is_negative(-1);
-	return (0);
-}*/
